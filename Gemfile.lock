@@ -1,0 +1,28 @@
+GIT
+  remote: git://github.com/railsmachine/shadow_puppet.git
+  revision: b1ed1e7992bc1bb87acf17768fde4dbca2e835d2
+  tag: v0.4.0.beta1
+  specs:
+    shadow_puppet (0.4.0.beta1)
+      activesupport (>= 2.0.0)
+      builder (>= 2.1.2)
+      facter (>= 1.5.4)
+      highline (>= 1.5.0)
+      puppet (= 0.24.8)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activesupport (3.0.0)
+    builder (2.1.2)
+    facter (1.5.8)
+    highline (1.6.1)
+    puppet (0.24.8)
+      facter (>= 1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  shadow_puppet!
