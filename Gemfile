@@ -1,6 +1,11 @@
 source :rubygems
 
-gem 'activesupport'
-gem 'shadow_puppet', :git => 'git://github.com/railsmachine/shadow_puppet.git', :tag => 'v0.4.0.beta1'
+gem 'chef', '0.9.8'
+gem 'json', '1.4.2'
+gem 'rest-client', '1.5.1'
 
-
+group :test, :development do
+  gem 'jeweler'
+  gem 'rake'
+  gem 'bundler', '1.0'
+end

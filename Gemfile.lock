@@ -1,28 +1,63 @@
-GIT
-  remote: git://github.com/railsmachine/shadow_puppet.git
-  revision: b1ed1e7992bc1bb87acf17768fde4dbca2e835d2
-  tag: v0.4.0.beta1
-  specs:
-    shadow_puppet (0.4.0.beta1)
-      activesupport (>= 2.0.0)
-      builder (>= 2.1.2)
-      facter (>= 1.5.4)
-      highline (>= 1.5.0)
-      puppet (= 0.24.8)
-
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.0.0)
-    builder (2.1.2)
-    facter (1.5.8)
+    abstract (1.0.0)
+    bunny (0.6.0)
+    chef (0.9.8)
+      bunny (>= 0.6.0)
+      erubis
+      extlib
+      highline
+      json (<= 1.4.2)
+      mixlib-authentication (>= 1.1.0)
+      mixlib-cli (>= 1.1.0)
+      mixlib-config (>= 1.1.0)
+      mixlib-log (>= 1.1.0)
+      moneta
+      ohai (>= 0.5.6)
+      rest-client (>= 1.0.4, <= 1.5.1)
+      uuidtools
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
+    extlib (0.9.15)
+    gemcutter (0.6.1)
+    git (1.2.5)
     highline (1.6.1)
-    puppet (0.24.8)
-      facter (>= 1.1.0)
+    jeweler (1.4.0)
+      gemcutter (>= 0.1.0)
+      git (>= 1.2.5)
+      rubyforge (>= 2.0.0)
+    json (1.4.2)
+    json_pure (1.4.6)
+    mime-types (1.16)
+    mixlib-authentication (1.1.4)
+      mixlib-log
+    mixlib-cli (1.2.0)
+    mixlib-config (1.1.2)
+    mixlib-log (1.1.0)
+    moneta (0.6.0)
+    ohai (0.5.6)
+      extlib
+      json (<= 1.4.2)
+      mixlib-cli
+      mixlib-config
+      mixlib-log
+      systemu
+    rake (0.8.7)
+    rest-client (1.5.1)
+      mime-types (>= 1.16)
+    rubyforge (2.0.4)
+      json_pure (>= 1.1.7)
+    systemu (1.2.0)
+    uuidtools (2.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport
-  shadow_puppet!
+  bundler (= 1.0)
+  chef (= 0.9.8)
+  jeweler
+  json (= 1.4.2)
+  rake
+  rest-client (= 1.5.1)
